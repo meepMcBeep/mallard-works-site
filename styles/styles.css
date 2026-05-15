@@ -74,7 +74,7 @@ body {
 
     min-height: 100vh;
 
-    padding: 80px 80px 80px 120px;
+    padding: 40px 80px 80px 120px;
 
     display: flex;
     align-items: center;
@@ -83,6 +83,14 @@ body {
 /* HERO SECTION */
 
 .hero_wrapper {
+    width: min(100%, 1150px);
+    min-height: 540px;
+
+    display: flex;
+    align-items: center;
+
+    padding: 48px;
+
     background-image: url("/images/hero.jpg");
     background-size: cover;
     background-position: 35% center;
@@ -91,6 +99,7 @@ body {
 
 .hero {
     max-width: 1000px;
+    width: 100%;
 }
 
 /* MISSION STATEMENT */
@@ -117,18 +126,9 @@ body {
     margin-right: 48px;
 }
 
-/* HERO LAYOUT */
-
-.hero_wrapper {
-    display: flex;
-    align-items: center;
-}
-
-
 /* =========================
    PARTS PAGE
 ========================= */
-
 
 .page_content {
     max-width: 1100px;
@@ -186,11 +186,9 @@ body {
     font-size: 16px;
 }
 
-
 /* =========================
    PRODUCT PAGE
 ========================= */
-
 
 .product_page {
     display: grid;
@@ -279,7 +277,7 @@ body {
 }
 
 /* =========================
-   PRODUCT PAGE
+   CONTENT PAGES
 ========================= */
 
 .page_content {
@@ -319,4 +317,31 @@ body {
 
 .text_link:hover {
     text-decoration: underline;
+}
+
+/* =========================
+   CONTENT IMAGE LAYOUT
+========================= */
+
+.content_with_image {
+    display: grid;
+    grid-template-columns: minmax(420px, 0.95fr) minmax(280px, 0.55fr);
+    gap: 72px;
+    align-items: start;
+    max-width: 1300px;
+}
+
+.heritage_image_panel {
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.heritage_image_panel img {
+    width: 100%;
+    display: block;
+    border: 1px solid #2a2a2a;
+    opacity: 0.9;
 }
