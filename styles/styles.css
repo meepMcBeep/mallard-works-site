@@ -82,6 +82,13 @@ body {
 
 /* HERO SECTION */
 
+.hero_wrapper {
+    background-image: url("/images/hero.jpg");
+    background-size: cover;
+    background-position: 35% center;
+    background-repeat: no-repeat;
+}
+
 .hero {
     max-width: 1000px;
 }
@@ -89,14 +96,14 @@ body {
 /* MISSION STATEMENT */
 
 .mission_statement {
-    font-size: clamp(32px, 5vw, 72px);
+    font-size: clamp(28px, 4vw, 64px);
 
     font-weight: 500;
-    line-height: 1.08;
+    line-height: 1.05;
 
     color: #ffffff;
 
-    max-width: 900px;
+    max-width: 700px;
 }
 
 /* OPTIONAL GOLD ACCENT LINE */
@@ -269,4 +276,47 @@ body {
     font-weight: 600;
     letter-spacing: 0.04em;
     text-transform: uppercase;
+}
+
+/* =========================
+   PRODUCT PAGE
+========================= */
+
+.page_content {
+    max-width: 900px;
+}
+
+.page_intro {
+    max-width: 900px;
+    margin-bottom: 80px;
+}
+
+.content_section {
+    margin-bottom: 64px;
+}
+
+.content_section h2 {
+    font-size: 2.2rem;
+    margin-bottom: 20px;
+}
+
+.content_section p {
+    max-width: 900px;
+    line-height: 1.8;
+    margin-bottom: 24px;
+    color: #cfcfcf;
+}
+
+/* =========================
+   CONTACT PAGE
+========================= */
+
+.text_link {
+    color: #c8a96a;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.text_link:hover {
+    text-decoration: underline;
 }
